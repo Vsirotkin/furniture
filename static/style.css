@@ -17,7 +17,7 @@ html, body {
 }
 
 .container {
-	width: 1066px;
+	width: 1150px;
 	margin: 0 auto;
 	min-height: 100%;
 }
@@ -61,7 +61,7 @@ html, body {
 	border-bottom: 3px solid #212121;
 }
 .menu a:hover {
-	color: #212121;
+	color: #dd0a0a;
 	font-weight: 700;
 	border-bottom: 3px solid #212121;
 }

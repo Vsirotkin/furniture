@@ -5,16 +5,18 @@
 </head>
 <body>
 	{% block menu%}
-		<div class="container">
-			<div class="header clearfix">
-				<p class="logo"></a>
-				<ul class="menu">
-					<li><a href="{% url 'home' %}" class="active">домой</a></li>
-					<li><a href="{% url 'product' %}">продукты</a></li>
-					<li><a href="{% url 'contact' %}">контакты</a></li>
-				</ul>
-				<a href="#" class="basket"></a>
-			</div>
+		<div class="header clearfix">
+			<p class="logo"></a>
+			<ul class="menu">
+				<li><a href="{% url 'home' %}" class="active">домой</a></li>
+				<li><a href="{% url 'product' %}">продукты</a></li>
+				<li><a href="{% url 'contact' %}">контакты</a></li>
+			</ul>
+			<a href="#" class="search"></a>
 		</div>
 	{% endblock menu %}
+
+	{% block content %}
+		<h1>Home</h1>
+	{% endblock content %}
 </body>
