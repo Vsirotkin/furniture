@@ -17,7 +17,7 @@ html, body {
 }
 
 .container {
-	width: 1150px;
+	width: 1050px;
 	margin: 0 auto;
 	min-height: 100%;
 }
@@ -543,7 +543,7 @@ html, body {
 
 .footer {
 	height: 384px;
-	width: 1169px;
+	width: 1150px;
 	background-color: #f7f7f7;
 	padding-left: 99px;
 	padding-right: 98px;
