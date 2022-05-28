@@ -7,40 +7,36 @@
 	<link  href="{% static 'fonts/font-awesome/css/font-awesome.css' %}" rel="stylesheet">
 {% endblock css %}
 
-<dir class="container">
+<div class="container">
     {% block menu %}
     {% endblock menu %}
 
     {% block content %}
     {% endblock content %}
-</dir>
+</div>
 
 
-<!--
-    {% block footer %}
-    <div class="footer">
-        <div class="clearfix">
-            <div class="text-footer">
-                <h3>контакты</h3>
+
+{% block footer %}
+    <footer>
+        <div class="footer">
+            <div class="clearfix">
+                <div class="text-footer">
+                    <h3>контакты</h3>
+                </div>
+                <div class="text-footer">
+                    <h3>полезная информация</h3>
+                </div>
+                <div class="text-footer clearfix">
+                    <h3>Оставайтесь на связи</h3>
+                    <p>Подписаться на новости и рассылки</p>
+                    <form>
+                        <input type="email" name="email" placeholder="ваш email">
+                        <a href="#"><i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i></a>
+                    </form>
+                </div>
             </div>
-            <div class="text-footer">
-                <h3>полезная информация</h3>
-            </div>
-            <div class="text-footer clearfix">
-                <h3>Оставайтесь на связи</h3>
-                <p>Подписаться на новости и рассылки</p>
-                <form>
-                    <input type="email" name="email" placeholder="ваш email">
-                    <a href="#"><i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i></a>
-                </form>
-            </div>
+            <div class="small">&copy; SV 2022</div>
         </div>
-        <div>
-            <p class="small">&copy; SV 2022</p><br>
-            <p class="small">Положения &amp; Условия  /  Конфиденциальность &amp; Cookies</p>
-        </div>
-        
-    </div>	
+    </footer>
 {% endblock footer%}
--->
-
