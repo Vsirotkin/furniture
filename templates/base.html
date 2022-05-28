@@ -3,26 +3,32 @@
 {% load static %}
 
 {% block css %}
-	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-	<link rel="stylesheet" href="{% static 'fonts/font-awesome/css/font-awesome.css' %}">
+	<link href="{% static 'style.css' %}" rel="stylesheet">
+	<link  href="{% static 'fonts/font-awesome/css/font-awesome.css' %}" rel="stylesheet">
 {% endblock css %}
 
+
 {% block menu %}
-<header>
-    <div>
-        <ul class="menu">
-            <li><a href="{% url 'home' %}">домой</a></li>
-            <li><a href="{% url 'product' %}">продукты</a></li>
-            <li><a href="{% url 'contact' %}">контакты</a></li>
-        </ul>
+    <div class="container">
+        <div class="header clearfix">
+            <p class="logo"></a>
+            <ul class="menu">
+                <li><a href="{% url 'home' %}">домой</a></li>
+                <li><a href="{% url 'product' %}">продукты</a></li>
+                <li><a href="{% url 'contact' %}">контакты</a></li>
+            </ul>
+            <a href="#" class="search"></a>
+            <a href="#" class="basket"></a>
+        </div>
     </div>
-</header>
+    
 {% endblock menu %}
 
 {% block content %}
 {% endblock content %}
 
-{% block footer %}
+<!--
+    {% block footer %}
     <div class="footer">
         <div class="clearfix">
             <div class="text-footer">
@@ -40,13 +46,12 @@
                 </form>
             </div>
         </div>
-        <p class="small">&copy; GB 2017</p>
-        <div class="social">
-            <a href="#" class="social1"></a>
-            <a href="#" class="social2"></a>
-            <a href="#" class="social3"></a>
-            <a href="#" class="social4"></a>
+        <div>
+            <p class="small">&copy; SV 2022</p><br>
+            <p class="small">Положения &amp; Условия  /  Конфиденциальность &amp; Cookies</p>
         </div>
-        <p class="small">Положения &amp; Условия  /  Конфиденциальность &amp; Cookies</p>
+        
     </div>	
 {% endblock footer%}
+-->
+

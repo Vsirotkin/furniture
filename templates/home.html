@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+<head>
+	<title>Магазин</title>
+</head>
+<body>
+	{% block menu%}
+		<div class="container">
+			<div class="header clearfix">
+				<p class="logo"></a>
+				<ul class="menu">
+					<li><a href="{% url 'home' %}" class="active">домой</a></li>
+					<li><a href="{% url 'product' %}">продукты</a></li>
+					<li><a href="{% url 'contact' %}">контакты</a></li>
+				</ul>
+				<a href="#" class="basket"></a>
+			</div>
+		</div>
+	{% endblock menu %}
+</body>
